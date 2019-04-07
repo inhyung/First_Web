@@ -4,23 +4,27 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-      /*
-      block level element
-      */
+      /* block level element */
       h1 {
         border-width : 5px;
         border-color : red;
         border-style : solid;
-        display : inline;
+        display : block; /* default */
       }
-      /*
-      inline element
-      */
+      /* inline element */
       a {
         border-width : 5px;
         border-color : red;
         border-style : solid;
-        display : block;
+        display : inline; /* default */
+        /* display : block / inline / none */
+      }
+      /* h1 & a are repeated => once by using ', (comma)'
+      h1, a {
+        <!-- border-width : 5px;
+        border-color : red;
+        border-style : solid; -->
+        border: 5px solid red; /* 'border' is repeared */
       }
     </style>
   </head>
